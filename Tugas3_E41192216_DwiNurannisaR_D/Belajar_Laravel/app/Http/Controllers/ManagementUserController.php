@@ -42,3 +42,5 @@ class ManagementUserController extends Controller
         return "Method ini nantinya digunakan untuk menghapus data user dengan id=" .$id;
     }
 }
+
+?>
