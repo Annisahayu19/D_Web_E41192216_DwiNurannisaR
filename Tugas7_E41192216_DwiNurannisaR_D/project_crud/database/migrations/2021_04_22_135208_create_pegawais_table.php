@@ -15,9 +15,10 @@ class CreatePegawaisTable extends Migration
     {
         Schema::create('pegawai', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama', 100);
-            $table->string('alamat', 100);
-            $table->string('tgllahir');
+            $table->string('nama');
+            $table->string('jabatan');
+            $table->year('tahun_masuk');
+            $table->year('tahun_keluar');
             $table->timestamps();
         });
     }

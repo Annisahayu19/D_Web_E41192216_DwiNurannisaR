@@ -51,17 +51,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <table class="table table-bordered">
                     <tr>
                         <th>Nama</th>
-                        <th>Alamat</th>
-                        <th>Tanggal Lahir</th>
+                        <th>Jabatan</th>
+                        <th>Tahun Masuk</th>
+                        <th>Tahun Keluar</th>
                         <th>Aksi</th>
                     </tr>
                     @foreach ($dtPegawai as $item)
                     <tr>
                         <td>{{ $item->nama }}</td>
-                        <td>{{ $item->alamat }}</td>
-                        <td>{{ $item->tgllahir }}</td>
-                        <td>
-                        <a href="{{ url('edit-pegawai') }}"><i class="fas fa-edit"></i></a> 
+                        <td>{{ $item->jabatan }}</td>
+                        <td>{{ $item->tahun_masuk }}</td>
+                        <td>{{ $item->tahun_keluar }}</td>
+                        <td><a href="{{ url('edit-pegawai') }}"><i class="fas fa-edit"></i></a> 
                         | 
                         <a href="{{ url('delete-pegawai') }}"><i class="fas fa-trash-alt" style="color: red"></i></a>
                         </td>

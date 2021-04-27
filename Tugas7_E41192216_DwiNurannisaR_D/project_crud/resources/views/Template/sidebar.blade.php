@@ -40,10 +40,14 @@
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            
             <ul class="nav nav-treeview">
               <li class="nav-item">
+                  <p>Dashboard</p>
+                  <p>Profile</p>
                 <a href=" {{ route('data-pegawai') }}" class="nav-link active">
                   <p>Data Pegawai</p>
+                  
                 </a>
               
         </ul>

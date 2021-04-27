@@ -39,8 +39,9 @@ class PegawaiController extends Controller
         //dd($request->all());
         Pegawai::create([
             'nama' => $request->nama,
-            'alamat' => $request->alamat,
-            'tgllahir' => $request->tgllahir,
+            'jabatan' => $request->jabatan,
+            'tahun_masuk' => $request->tahun_masuk,
+            'tahun_keluar' => $request->tahun_keluar,
         ]);
 
         return redirect('data-pegawai');

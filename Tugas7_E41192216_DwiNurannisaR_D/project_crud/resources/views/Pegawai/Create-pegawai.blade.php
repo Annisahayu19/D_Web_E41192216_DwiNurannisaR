@@ -48,14 +48,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="card-body">
                 <form action="{{ route('simpan-pegawai') }}" method="get">
                 {{ csrf_field() }}
-                  <div class="form-group">
+                <div class="form-group">
                     <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama Pegawai">
                   </div>
                   <div class="form-group">
-                    <textarea name="alamat" id="alamat" class="form-control" placeholder="Alamat"></textarea>
+                    <input type="text" id="jabatan" name="jabatan" class="form-control" placeholder="Jabatan">
                   </div>
                   <div class="form-group">
-                    <input type="date" id="tgllahir" name="tgllahir" class="form-control">
+                    <input id="text" id="tahun_masuk" name="tahun_masuk" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input id="text" id="tahun_keluar" name="tahun_keluar" class="form-control">
                   </div>
                   <div class="form-group">
                     <button type="submit" class="btn btn-success">Simpan Data</button>
